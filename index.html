@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="button.js"></script>
+    <script src="veiculo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainmenu">
+        <a class="myButton" id="Estacionar" onclick="park()">Estacionar</a></br>
+        <a class="myButton" id="Liberarveiculo"onclick ="release()">Liberar Veículo </a>
+        <a class="myButton" id="Gerarrelatorio"onclick ="Relatorio()"> Gerar Relatório</a></br>
+        <a class="myButton" id="Gerarsaldo">Saldo</a>
+    </div>
+      
+      <div class="content">
+
+        <div class="menuestacionar" id="menuestacionar">
+
+          <p>Veiculo:</p>
+
+          <button id = "tipocarro" onclick="carro()">Carro</button>
+          <button id = "tipomoto" onclick="moto()">Moto</button>
+
+                <div class="menucarro"id="menucarro">
+                        <p>ID:<input type="text" id="idcarro"></p>
+                        <p>Placa:<input type="text" id="placacarro"></p>
+                        <p>Marca:<input type="text" id="marcacarro"></p>
+                        <p>Cor:<input type="text" id="corcarro"></p>
+                        <p>Nome do Proprietário:<input type="text" id="nomedoproprietariocarro"></p>
+                        <p>Número de portas:<input type="number" id="numdeportas"></p>
+                        <button id="okcarro"onclick="submitcar();">Confirmar</button>
+                </div>            
+           
+          
+                <div class="menumoto" id="menumoto"> <p>ID:<input type="text" id="idmoto"></p>
+                        <p>Placa:<input type="text" id="placamoto"></p>
+                        <p>Marca:<input type="text" id="marcamoto"></p>
+                        <p>Cor:<input type="text" id="cormoto"></p>
+                        <p>Nome do Proprietário:<input type="text" id="nomedoproprietariomoto"></p>
+                        <button id="okcarro"onclick="submitbike();">Confirmar</button>
+                </div>
+              <p>Horário:<input type="text" id="horario"></p> 
+        </div>
+
+        <div class="menuliberar" id="menuliberar">
+        <p>ID Veículo: <input type="text" id="idliberar"></p>
+        <p>Horário Liberação:<input type="text" id="Hliberar"></p>
+        </div>
+      </div>
+    
+</body>
+</html>
